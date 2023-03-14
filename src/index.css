@@ -1,0 +1,367 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+@font-face {
+  font-family: "MillikFont";
+  src: local("MillikFont"),
+    url("./fonts/Millik.ttf") format("truetype");
+}
+
+:root {
+  --headerFont: MillikFont;
+  --paragraphFont: 'Poppins', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--paragraphFont);
+}
+
+
+
+p {
+  font-family: var(--paragraphFont);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headerFont);
+}
+
+.nav {
+  width: 100%;
+  /* display: flex;
+  margin: 0 auto; */
+  background-color: #FFFFFF;
+  position: fixed;
+  padding: 10px 60px;
+  /* height: 80px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  /* box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24); */
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo img {
+  width: 65px;
+}
+
+#navlinks li {
+  margin: 0 35px;
+  font-weight: 400;
+  font-size: 15px;
+  white-space: nowrap;
+  color: #444444;
+}
+
+#navlinks li:hover {
+  color: #FB9129;
+}
+
+.btn {
+  margin: 0 15px;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  border-color: transparent;
+}
+
+.btn.register {
+  color: #0D9069;
+  border: 2px solid #0D9068;
+  background-color: #FFFFFF;
+}
+
+.btn.login {
+  color: #FFFFFF;
+  background: #0D9069;
+}
+
+.btn.register:hover {
+  color: #FFFFFF;
+  background: #0D9069;
+}
+
+.btn.login:hover {
+  color: #0D9069;
+  border: 2px solid #0D9068;
+  background-color: #FFFFFF;
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: #FF7011;
+  align-items: center;
+}
+
+.landing-page {
+  margin: 120px 0 50px 0;
+  padding: 0 50px;
+}
+
+.landing-page .image,
+.solution-two .image {
+  display: flex;
+  padding: 5px;
+  width: 480px;
+  /* border: 2.5px solid; */
+  border-radius: 50%;
+  /* border-image-slice: 1; */
+  /* border-image-source: linear-gradient(180deg, #FB9129 0%, #0D9068 100%); */
+  background: linear-gradient(180deg, #FB9129 0%, #0D9068 100%);
+
+
+}
+
+.landing-page .image img,
+.solution-two .image img {
+  border: 20px #ffffff solid;
+  border-radius: 50%;
+}
+
+.about-us .image {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background: url('./assets/jar.png'), linear-gradient(180deg, #064B36 0%, #0A7857 100%), #D9D9D9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 45px
+}
+
+/* .about-us .image img{
+  max-width: 30%;
+} */
+
+h2 {
+  font-weight: 400;
+  font-size: 38px;
+  color: #FFFFFF;
+  margin: 10px 0;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 26px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 24px;
+  color: #444444;
+  margin: 10px 0;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 64px;
+  text-align: center;
+  color: #22A45D;
+}
+
+.about-us p {
+  width: 630px;
+  font-size: 18px;
+  line-height: normal;
+  text-align: justify;
+  color: #FFFFFF;
+  margin: 30px 0;
+}
+
+
+.about-us .btn.register,
+.getting-started .btn.register {
+  width: 180px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+hr {
+  transform: rotate(180deg);
+  width: 5px;
+  border: none;
+  margin: 0 5px;
+  background-color: #FB9129;
+}
+
+.box {
+  width: 400px;
+  height: 370px;
+  background: linear-gradient(93.54deg, #252525 14.44%, #444444 97.7%);
+  border-radius: 25px;
+  padding: 30px 20px;
+  margin: 20px 1px;
+  text-align: center;
+}
+
+.box p {
+  font-size: 16px;
+  text-align: center;
+
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+
+.box:nth-child(1) {
+  background: linear-gradient(-93.54deg, #252525 14.44%, #444444 97.7%);
+}
+
+.box:nth-child(2) {
+
+  background: #444444;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.solution .hr hr {
+  margin: 20px 10px;
+  width: 70px;
+  height: 4px;
+  background: #FB9129;
+  border-radius: 5px;
+}
+
+.solution .btn.register {
+  width: 200px;
+  height: 65px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 114.2%;
+  /* or 27px */
+
+
+  color: #FFFFFF;
+  background: #0D9069;
+  border-radius: 6px;
+}
+
+.farmers {
+  margin: 50px 30px;
+  align-items: flex-start;
+
+}
+
+.farmers p {
+  width: 600px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #444444;
+}
+
+.farmers a {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0D9068;
+  margin: 10px 0;
+
+}
+
+.solution-two {
+  background-image: url('./assets/Ellipse.png');
+  background-repeat: no-repeat;
+  background-position: 105% 120%;
+  background-size: 440px;
+  
+}
+
+.impact p {
+  width: 950px;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #444444;
+  margin: 30px 0;
+}
+
+.contact-list .box {
+  width: 350px;
+  height: 250px;
+  background: #FFFFFF;
+  margin: 20px 5px 80px 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.contact .box:nth-child(2) {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.contact h3 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.fa-icon {
+  width: 20px;
+  margin: 0 10px;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 769px) {
+  #navlinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center !important;
+    position: fixed;
+    top: 80px;
+    right: -1000px;
+    height: 100vh;
+    background-color: #FAFAFA;
+    /* top: 0; */
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+    /* border-bottom: 1px solid #f2f2f2; */
+
+  }
+
+  #navlinks.active {
+    right: 0px;
+  }
+
+  #mobile {
+    display: block;
+    font-size: 35px;
+  }
+}
