@@ -25,7 +25,7 @@ const AboutUs = () => {
                 </div>
                 <div className="text" style={myCol}>
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Turpis posuere donec ipsum lectus cursus. 
+                    <p style={{color: "#FFFFFF"}}>Lorem ipsum dolor sit amet consectetur. Turpis posuere donec ipsum lectus cursus. 
                         Pellentesque tellus ornare id neque. Rutrum fringilla molestie laoreet turpis placerat hendrerit in mauris sapien.
                         Ut pellentesque ut magna posuere diam in in tristique fermentum. At duis phasellus donec aliquet elementum odio.
                         Amet ut feugiat egestas interdum commodo amet suspendisse suspendisse tempus.Tincidunt interdum tortor vestibulum felis a diam mauris nibh.

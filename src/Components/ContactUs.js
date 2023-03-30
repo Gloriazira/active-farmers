@@ -27,7 +27,9 @@ const ContactUs = () => {
                     <div className="box">
                         <h3 style={{ color: "#FB9129" }}><FontAwesomeIcon icon={faEnvelope} className="fa-icon"/> Email</h3>
                         <p>
-                            <a href="mailto:activefarmerscooperative@gmail.com">activefarmerscooperative@gmail.com</a>
+                            {/* <a href="mailto:activefarmerscooperative@gmail.com" > */}
+                                activefarmerscooperative@ gmail.com
+                                {/* </a> */}
                         </p>
                     </div>
                     <div className="box">

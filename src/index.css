@@ -9,6 +9,7 @@
 :root {
   --headerFont: MillikFont;
   --paragraphFont: 'Poppins', sans-serif;
+  --paragraphColor: #444444;
 }
 
 * {
@@ -17,12 +18,15 @@
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: var(--paragraphFont);
+  color: var(--paragraphColor);
 }
 
 
 
 p {
   font-family: var(--paragraphFont);
+  font-weight: 300;
+  font-size: 16px;
 }
 
 h1,
@@ -110,6 +114,10 @@ a {
   align-items: center;
 }
 
+.nav-btn-mobile{
+  visibility: hidden;
+}
+
 .landing-page {
   margin: 120px 0 50px 0;
   padding: 0 50px;
@@ -183,10 +191,8 @@ h5 {
 
 .about-us p {
   width: 630px;
-  font-size: 18px;
   line-height: normal;
   text-align: justify;
-  color: #FFFFFF;
   margin: 30px 0;
 }
 
@@ -219,14 +225,10 @@ hr {
   border-radius: 25px;
   padding: 30px 20px;
   margin: 20px 1px;
-  text-align: center;
 }
 
 .box p {
-  font-size: 16px;
   text-align: center;
-
-  color: #FFFFFF;
   margin: 20px 0;
 }
 
@@ -253,10 +255,6 @@ hr {
   height: 65px;
   font-weight: 500;
   font-size: 24px;
-  line-height: 114.2%;
-  /* or 27px */
-
-
   color: #FFFFFF;
   background: #0D9069;
   border-radius: 6px;
@@ -271,13 +269,9 @@ hr {
 .farmers p {
   width: 600px;
   text-align: justify;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  color: #444444;
 }
 
-.farmers a {
+.farmers a, .farmers path {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -287,27 +281,25 @@ hr {
 
 }
 
+
 .solution-two {
   background-image: url('./assets/Ellipse.png');
   background-repeat: no-repeat;
-  background-position: 105% 120%;
-  background-size: 440px;
-  
+  background-position: 105% 100%;
+  background-size: 400px;
+
 }
 
 .impact p {
   width: 950px;
-  font-weight: 300;
-  font-size: 20px;
   text-align: center;
-  color: #444444;
   margin: 30px 0;
 }
 
 .contact-list .box {
   width: 350px;
   height: 250px;
-  background: #FFFFFF;
+  background: #FFFFFF !important;
   margin: 20px 5px 80px 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -321,23 +313,77 @@ hr {
   font-size: 22px;
 }
 
-.fa-icon {
+.fa-icon, .fa-icon path {
   width: 20px;
   margin: 0 10px;
+  color: #FB9129 !important;
 }
 
 .contact p {
   font-weight: 400;
   font-size: 14px;
-  color: #444444;
 }
 
 
 
 
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 70px !important;
+    width: 500px !important;
+  }
 
+  #navlinks li {
+    margin: 0 25px;
+  }
+
+  .landing-page .image,
+  .solution-two .image {
+    width: 420px;
+  }
+
+  .about-us .text {
+    margin: 0 20px;
+  }
+
+  
+
+  .box {
+    width: 310px;
+    height: 450px;
+  }
+  .farmers {
+    margin: 16px 30px;
+  }
+
+  .farmers p {
+    width: 420px;
+  }
+
+  .solution-two {
+    margin: 70px auto 0 auto !important;
+  }
+  .impact h2{
+    margin-top: 50px;
+  }
+  .impact p, .getting-started p {
+    width: 860px;
+  }
+  .contact-list .box {
+    width: 300px;
+  }
+  
+
+}
 
 @media only screen and (max-width: 769px) {
+  p {
+    font-size: 14px;
+}
+  h1 {
+    font-size: 50px !important;
+    width: 488px !important;
+  }
   #navlinks {
     width: 100%;
     display: flex;
@@ -364,4 +410,17 @@ hr {
     display: block;
     font-size: 35px;
   }
+  .nav-btn-desktop{
+    visibility: hidden;
+  }
+  .nav-btn-mobile{
+    display: block;
+  }
+
+  .about-us .image {
+    width: 570px;
+    height: 327px;
+    background-size: contain;
+    border-radius: 45px;
+}
 }

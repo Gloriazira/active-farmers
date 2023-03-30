@@ -18,6 +18,12 @@ const Navbar = () => {
         justifyContent: "space-between",
         alignItems: "center",
     };
+    const myCol = {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        alignItems: "center",
+    };
     return (
         <nav>
             <div className="nav" style={myStyle} id="home">
@@ -34,18 +40,27 @@ const Navbar = () => {
                             <AnchorLink href='#impact'>Target</AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink href='#start'>Contact Us</AnchorLink>
+                            <AnchorLink href='#contact'>Contact Us</AnchorLink>
                         </li>
+
+                        <div style={myCol} className="nav-btn-mobile">
+                            <AnchorLink href=''>
+                                <button className="btn register" onClick={closeMobileMenu}>Register</button>
+                            </AnchorLink>
+                            <AnchorLink href=''>
+                                <button className="btn login" onClick={closeMobileMenu}>Login</button>
+                            </AnchorLink>
+                        </div>
 
                     </ul>
 
                 </div>
 
-                <div style={myStyle}>
-                    <AnchorLink href='#start'>
+                <div style={myStyle} className="nav-btn-desktop">
+                    <AnchorLink href=''>
                         <button className="btn register" onClick={closeMobileMenu}>Register</button>
                     </AnchorLink>
-                    <AnchorLink href='#start'>
+                    <AnchorLink href=''>
                         <button className="btn login" onClick={closeMobileMenu}>Login</button>
                     </AnchorLink>
                 </div>
